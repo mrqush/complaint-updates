@@ -4,14 +4,6 @@
   color: #333;
   font: 14px Roboto; }
   .complaint-updates__item {
-    border-left: 3px solid #eaad1a;
-    background: #f3f5f5;
-    padding: 8px 8px 8px 15px;
-    margin: 10px 0 5px;
-    color: #333;
-    font-size: 16px;
-    line-height: 26px; }
-  .complaint-updates__resolved {
     background: rgba(136, 187, 139, 0.15);
     border-left: 3px solid #88bb8b;
     padding: 8px 8px 8px 15px;
@@ -19,6 +11,15 @@
     color: #333;
     font-size: 16px;
     line-height: 26px; }
+  .complaint-updates_author {
+    border-left: 3px solid #eaad1a;
+    background: #f3f5f5; }
+  .complaint-updates_user {
+    border-left: 3px solid #d5d7d8;
+    background: #f3f5f5; }
+  .complaint-updates_support {
+    border-left: 3px solid #799ee9;
+    background: #f3f5f5; }
   .complaint-updates__title {
     color: #008000;
     font-weight: bold;

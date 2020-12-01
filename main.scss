@@ -4,15 +4,6 @@
     color: #333;
     font: 14px Roboto;
     &__item {
-        border-left: 3px solid #eaad1a;
-        background: #f3f5f5;
-        padding: 8px 8px 8px 15px;
-        margin: 10px 0 5px;
-        color: #333;
-        font-size: 16px;
-        line-height: 26px;
-    }
-    &__resolved {
         background: rgba(136, 187, 139, 0.15);
         border-left: 3px solid #88bb8b;
         padding: 8px 8px 8px 15px;
@@ -20,6 +11,18 @@
         color: #333;
         font-size: 16px;
         line-height: 26px;
+    }
+    &_author {
+        border-left: 3px solid #eaad1a;
+        background: #f3f5f5;
+    }
+    &_user {
+        border-left: 3px solid #d5d7d8;
+        background: #f3f5f5;
+    }
+    &_support {
+        border-left: 3px solid #799ee9;
+        background: #f3f5f5;
     }
     &__title {
         color: #008000;
@@ -32,7 +35,7 @@
         margin-bottom: 15px;
         color: #999;
     }
-    &__status{
+    &__status {
         color: #999;
         font-weight: 700;
         font-size: 18px;

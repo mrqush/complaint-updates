@@ -78,11 +78,24 @@
 
 </style>
 <div class="complaint-updates">
-    <div class="complaint-updates__item complaint-updates__item_author">
+    <div id="c{$args["ID"]}" class="complaint-updates__item <if($args['uid']==$args['complaintUID'])>complaint-updates__item_author<else>complaint-updates__item_support</if>">
+      <if($args['bnuID'])><div class="complaint-updates__verified">Verified Support</div></if>
         <span class="complaint-updates__top">
             <if($args['uid']==$args['complaintUID'])>Updated by </if>
-                <a href=""{$args['userLink']}"" class="complaint-updates__user">{$args['userName']}</a> {$args['postTime']}
+                <a href=""{$args['userLink']}"" class="complaint-updates__user">{$args['userName']}</a>
+                <if($args['uid']!=$args['complaintUID'])>'s response</if>
+                 {$args['postTime']}
         </span>
+
+        <if($base->isAdmin && !$base->adminRole)>
+          <a href="/?delcomment={$args['ID']}" onclick="return confirm(\'Do you want delete record?\')">
+            <img src="/img/del.png" width="16" height="16" border=0 alt="Delete comment" style="vertical-align:middle;">
+          </a>
+          <a href="#" onclick="return editcomment('{$args['ID']}');">
+            <img src="/img/edit.png" width="16" height="16" border=0 alt="Edit Comment" style="vertical-align:middle;">
+          </a>
+          {$args["spam_data"]}
+        </if>
         <br>
         {$args["post_text"]}
         {$args['imageText']}

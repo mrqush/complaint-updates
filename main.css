@@ -33,7 +33,6 @@
 }
 .complaint-updates__date {
   display: block;
-  margin-bottom: 15px;
   color: #999;
 }
 .complaint-updates__status {
@@ -44,7 +43,6 @@
 .complaint-updates__top {
   color: #999;
   display: block;
-  margin-bottom: 15px;
 }
 .complaint-updates__user {
   color: #105cb6;
@@ -69,7 +67,7 @@
 .complaint-updates__image {
   display: inline-block;
   padding: 1px;
-  margin: 3px 20px 3px 0;
+  margin: 26px 20px 3px 0;
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -95,4 +93,7 @@
   height: 16px;
   content: "";
   background: url(https://www.consumercomplaints.in/fw/user-ok-icon.png) no-repeat;
+}
+.complaint-updates__text {
+  padding-top: 26px;
 }
